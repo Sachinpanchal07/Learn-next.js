@@ -1,4 +1,4 @@
-export const metadata = {
+export const metadata = { // static metadata
   title: "My Next App",
   description: "Learning Next.js + TypeScript",
 };
