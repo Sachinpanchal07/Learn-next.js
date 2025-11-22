@@ -1,5 +1,11 @@
-export const metadata = { // static metadata
-  title: "My Next App",
+import {Metadata} from "next";
+
+
+export const metadata : Metadata = { // static metadata
+  title : {
+    default : "This is defalt title used for component for which we did not defined metadata in their file",
+    template : "%s | This line is permanent but %s replaces with metadata defined in specific file"
+  },
   description: "Learning Next.js + TypeScript",
 };
 
