@@ -5,7 +5,12 @@ export const metadata = {
     }
 }
 
-export default function Blog(){
+export default async function Blog(){
+    await new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve("Intentional Loading")
+        }, 1000)
+    })
     return(
         <div>
             <h1>blog</h1>
