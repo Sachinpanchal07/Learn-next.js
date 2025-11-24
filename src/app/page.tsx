@@ -7,6 +7,8 @@ export default function Home() {
       <Link href="/blog">blog</Link>
       <br />
       <Link href="/products">products</Link>
+      <Link href="/articles/breaking-news-123?lang=en">Read in English</Link>
+      <Link href="/articles/breaking-news-123?lang=fr">Read in French</Link>
       <h1>This is home page</h1>
     </div>
   );

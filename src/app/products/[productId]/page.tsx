@@ -4,8 +4,8 @@ type props = {
 };
 
 export const generateMetadata = async( { params } : props ) : Promise<Metadata> => {
-    const id = (await params).productId; // () used b/z dot operator has higher precedence the ()
-    const title = await new Promise((resolve) => {
+    const id = (await params).productId; // () used b/z dot operator has higher precedence the () 
+    const title = await new Promise((resolve) => { 
         setTimeout(()=>{
             resolve(`iphone ${id}`)
         }, 100)
